@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="InternTrack intern dashboard"><title>Dashboard | InternTrack</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">I</span> InternTrack</a>
+  <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="dashboard.html" class="active">Dashboard</a><a href="task.html">Task details</a></nav>
+  <button class="profile-chip" id="profileBtn" type="button" aria-label="Open profile menu">AK <span>Alex Kumar</span>⌄</button>
+</header>
+
+<main class="dashboard container">
+  <section class="dash-top">
+    <div><span class="eyebrow">MY INTERNSHIP</span><h1>Good morning, Alex <span>👋</span></h1><p>Here’s a quick look at where you are this week.</p></div>
+    <button class="btn" id="focusBtn">Focus on next task →</button>
+  </section>
+
+  <section class="stat-grid" aria-label="Internship summary">
+    <article class="stat-card"><span>WEEKLY PROGRESS</span><strong>65%</strong><div class="progress"><i style="width:65%"></i></div><small>3 of 5 tasks completed</small></article>
+    <article class="stat-card"><span>TASKS DUE</span><strong>2</strong><small class="warning">Next deadline is tomorrow</small></article>
+    <article class="stat-card"><span>INTERNSHIP</span><strong>Week 3 <small>/ 8</small></strong><small>Frontend Development</small></article>
+  </section>
+
+  <section class="dashboard-grid">
+    <div class="panel tasks-panel">
+      <div class="panel-head"><div><h2>This week</h2><p>Monday 14 – Sunday 20 September</p></div><button class="filter-btn" id="filterBtn">All tasks ▾</button></div>
+      <div id="taskList">
+        <a class="task-row done" href="task.html?task=wireframe"><span class="check">✓</span><span><b>Submit wireframe review</b><small>Design · Completed</small></span><span class="task-date">Sep 15</span></a>
+        <a class="task-row" href="task.html?task=dashboard"><span class="check"></span><span><b>Build responsive dashboard</b><small>Frontend · In progress</small></span><span class="task-date">Sep 17</span></a>
+        <a class="task-row" href="task.html?task=api"><span class="check"></span><span><b>Connect task data to API</b><small>Backend · Not started</small></span><span class="task-date">Sep 19</span></a>
+        <a class="task-row done" href="task.html?task=research"><span class="check">✓</span><span><b>Research accessibility basics</b><small>Research · Completed</small></span><span class="task-date">Sep 16</span></a>
+      </div>
+    </div>
+
+    <aside class="panel mentor-panel">
+      <div class="mentor-head"><div class="mentor-avatar">MS</div><div><h3>Mentor note</h3><small>Priya Sharma · 2 hours ago</small></div></div>
+      <blockquote>“The dashboard structure is looking good. For the next step, pay attention to keyboard navigation and smaller screen sizes.”</blockquote>
+      <a class="text-link" href="task.html">View related task →</a>
+    </aside>
+  </section>
+</main>
+<footer class="footer"><div class="container"><span>© 2026 InternTrack</span><span>Need help? Ask your mentor.</span></div></footer>
+<script src="js/app.js"></script>
+</body>
+</html>

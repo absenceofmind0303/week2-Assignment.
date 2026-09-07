@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="InternTrack task details"><title>Task details | InternTrack</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">I</span> InternTrack</a>
+  <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a href="task.html" class="active">Task details</a></nav>
+  <button class="profile-chip" type="button">AK <span>Alex Kumar</span>⌄</button>
+</header>
+
+<main class="task-page container">
+  <a class="back-link" href="dashboard.html">← Back to dashboard</a>
+  <div class="task-layout">
+    <article class="task-main">
+      <div class="task-title-row"><div><span class="tag">FRONTEND</span><h1 id="taskTitle">Build responsive dashboard</h1><p class="task-meta">Due <b>Wednesday, 17 September</b> · Estimated 4 hours</p></div><span class="pill progress-pill">In progress</span></div>
+      <hr>
+      <h2>What you need to do</h2>
+      <p id="taskDescription">Create the main internship dashboard using the approved wireframe. The page should show weekly progress, upcoming tasks and mentor feedback. Make sure the layout adapts cleanly from desktop to mobile.</p>
+      <h2>Acceptance checklist</h2>
+      <label class="check-item"><input type="checkbox" checked> Desktop layout follows the wireframe</label>
+      <label class="check-item"><input type="checkbox"> Tablet and mobile layouts tested</label>
+      <label class="check-item"><input type="checkbox"> Keyboard navigation works</label>
+      <label class="check-item"><input type="checkbox"> Buttons have clear focus states</label>
+      <div class="resources"><h2>Helpful resources</h2><div class="resource"><span>↗</span><div><b>Week 3 wireframe</b><small>Figma reference · Design team</small></div><span>→</span></div><div class="resource"><span>▣</span><div><b>Accessibility checklist</b><small>Internal guide · 8 min read</small></div><span>→</span></div></div>
+    </article>
+
+    <aside class="task-side">
+      <section class="panel submit-panel">
+        <h3>Task progress</h3><div class="big-progress"><span id="progressValue">65%</span><div class="progress"><i id="progressBar" style="width:65%"></i></div></div>
+        <label for="status">Update status</label>
+        <select id="status"><option>In progress</option><option>Not started</option><option>Ready for review</option></select>
+        <button class="btn full" id="saveBtn">Save progress</button>
+        <p class="save-message" id="saveMessage" role="status"></p>
+      </section>
+      <section class="panel note-panel"><span class="eyebrow">MENTOR FEEDBACK</span><p>“Nice structure so far. Remember to test the empty state before you mark this ready for review.”</p><small>Priya Sharma · Mentor</small></section>
+    </aside>
+  </div>
+</main>
+<footer class="footer"><div class="container"><span>© 2026 InternTrack</span><span>Task workspace</span></div></footer>
+<script src="js/app.js"></script>
+</body>
+</html>
